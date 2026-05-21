@@ -22,6 +22,7 @@ st.session_state["user_id"] = cookies.get("user_id", "") # Added user_id
 # Routing
 page = st.session_state["page"]
 
+
 if page == "Login":
     from pages.Login import login_page
     login_page(cookies)
